@@ -6,4 +6,4 @@ def test_model_training():
     train_model()
     assert os.path.exists("models/model.pkl"),"model file not found"
     model = joblib.load("models/model.pkl")
-    assert hasattr(model,"pridict"),"model does not found"
+    assert hasattr(model,"predict"),"model does not found"
